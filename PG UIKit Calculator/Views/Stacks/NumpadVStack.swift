@@ -34,7 +34,8 @@ final class NumpadVStack: UIStackView {
         for i in 1..<5 {
             let button = UIButton()
             button.backgroundColor = .lightGray
-            button.layer.cornerRadius = 35
+            button.layer.cornerRadius = 40
+            button.clipsToBounds = true
             button.setTitleColor(.black, for: .normal)
             button.setTitleColor(.white, for: .highlighted)
 
