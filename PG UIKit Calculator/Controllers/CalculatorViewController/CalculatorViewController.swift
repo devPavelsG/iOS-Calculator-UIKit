@@ -22,7 +22,7 @@ class CalculatorViewController: UIView {
         CalcViewSetup()
     }
 
-    func CalcViewSetup() {
+    private func CalcViewSetup() {
         addSubview(buttonsHStack)
         backgroundColor = .black
 

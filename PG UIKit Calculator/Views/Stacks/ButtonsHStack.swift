@@ -28,7 +28,7 @@ class ButtonsHStack: UIStackView {
         axis = .horizontal
         distribution = .fillEqually
 
-        resultLabel.snp.makeConstraints { (make) in
+        resultLabel.snp.makeConstraints { make in
             make.bottom.equalTo(self.snp.topMargin).offset(-20)
             make.right.equalTo(self).offset(-20)
         }

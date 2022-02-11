@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     private func calculatorViewSetup() {
-        calculatorView.snp.makeConstraints { (make) in
+        calculatorView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.top.equalToSuperview()
             make.trailing.equalToSuperview()
