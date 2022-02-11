@@ -14,15 +14,15 @@ class CalculatorViewController: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        mainViewSetup()
+        CalcViewSetup()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        mainViewSetup()
+        CalcViewSetup()
     }
 
-    func mainViewSetup() {
+    func CalcViewSetup() {
         addSubview(buttonsHStack)
         backgroundColor = .black
 

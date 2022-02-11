@@ -68,9 +68,9 @@ class CalculatorViewModel {
 
     private func calculateResult() -> NSNumber {
 
-        let predicate2 = NSPredicate(format: "1.0 * \(returnResult) = 0")
+        let predicate = NSPredicate(format: "1.0 * \(returnResult) = 0")
 
-        guard let comparisation = predicate2 as? NSComparisonPredicate else {
+        guard let comparisation = predicate as? NSComparisonPredicate else {
             fatalError()
         }
         let leftExpression = comparisation.leftExpression
