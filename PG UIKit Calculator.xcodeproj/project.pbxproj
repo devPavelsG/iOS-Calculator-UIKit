@@ -10,9 +10,13 @@
 		1BB81B6127B26EAF007F7A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B6027B26EAF007F7A57 /* AppDelegate.swift */; };
 		1BB81B6327B26EAF007F7A57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B6227B26EAF007F7A57 /* SceneDelegate.swift */; };
 		1BB81B6527B26EAF007F7A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B6427B26EAF007F7A57 /* ViewController.swift */; };
-		1BB81B6827B26EAF007F7A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6627B26EAF007F7A57 /* Main.storyboard */; };
 		1BB81B6A27B26EB1007F7A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6927B26EB1007F7A57 /* Assets.xcassets */; };
 		1BB81B6D27B26EB1007F7A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6B27B26EB1007F7A57 /* LaunchScreen.storyboard */; };
+		1BB81BA027B2A4E4007F7A57 /* ButtonsHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B9F27B2A4E4007F7A57 /* ButtonsHStack.swift */; };
+		1BB81BA327B2A539007F7A57 /* NumpadVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81BA227B2A539007F7A57 /* NumpadVStack.swift */; };
+		2E2597152D616DB6DBEBB6C7 /* Pods_PG_UIKit_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */; };
+		AFBCA646D335B9504BFC3B63 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA09CF65C74EA432F4FC1 /* MainViewModel.swift */; };
+		AFBCA6D893B4CF8B8DFDE111 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA78DD9C1318F95CBB194 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,16 @@
 		1BB81B6027B26EAF007F7A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BB81B6227B26EAF007F7A57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1BB81B6427B26EAF007F7A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1BB81B6727B26EAF007F7A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BB81B6927B26EB1007F7A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BB81B6C27B26EB1007F7A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BB81B6E27B26EB1007F7A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB81B9F27B2A4E4007F7A57 /* ButtonsHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsHStack.swift; sourceTree = "<group>"; };
+		1BB81BA227B2A539007F7A57 /* NumpadVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumpadVStack.swift; sourceTree = "<group>"; };
+		29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PG_UIKit_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		588411A3615BA38F9FE1CF4D /* Pods-PG UIKit Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG UIKit Calculator.debug.xcconfig"; path = "Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		AFBCA09CF65C74EA432F4FC1 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AFBCA78DD9C1318F95CBB194 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FD2AEE806FA30A86648CA688 /* Pods-PG UIKit Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG UIKit Calculator.release.xcconfig"; path = "Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2597152D616DB6DBEBB6C7 /* Pods_PG_UIKit_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				1BB81B5F27B26EAF007F7A57 /* PG UIKit Calculator */,
 				1BB81B5E27B26EAF007F7A57 /* Products */,
+				EC596EE18C4097872CD14163 /* Pods */,
+				F8CA83AFD7AF6455200F8A90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,67 @@
 		1BB81B5F27B26EAF007F7A57 /* PG UIKit Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				1BB81B9C27B2A434007F7A57 /* Views */,
+				1BB81B7527B2703F007F7A57 /* Controllers */,
 				1BB81B6027B26EAF007F7A57 /* AppDelegate.swift */,
 				1BB81B6227B26EAF007F7A57 /* SceneDelegate.swift */,
-				1BB81B6427B26EAF007F7A57 /* ViewController.swift */,
-				1BB81B6627B26EAF007F7A57 /* Main.storyboard */,
 				1BB81B6927B26EB1007F7A57 /* Assets.xcassets */,
 				1BB81B6B27B26EB1007F7A57 /* LaunchScreen.storyboard */,
 				1BB81B6E27B26EB1007F7A57 /* Info.plist */,
+				AFBCAE7D1EED71BD33EAA21D /* Model */,
 			);
 			path = "PG UIKit Calculator";
+			sourceTree = "<group>";
+		};
+		1BB81B7527B2703F007F7A57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BB81B6427B26EAF007F7A57 /* ViewController.swift */,
+				AFBCA78DD9C1318F95CBB194 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1BB81B9C27B2A434007F7A57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BB81BA927B2A9BF007F7A57 /* Stacks */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1BB81BA927B2A9BF007F7A57 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				1BB81B9F27B2A4E4007F7A57 /* ButtonsHStack.swift */,
+				1BB81BA227B2A539007F7A57 /* NumpadVStack.swift */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
+		AFBCAE7D1EED71BD33EAA21D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFBCA09CF65C74EA432F4FC1 /* MainViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC596EE18C4097872CD14163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				588411A3615BA38F9FE1CF4D /* Pods-PG UIKit Calculator.debug.xcconfig */,
+				FD2AEE806FA30A86648CA688 /* Pods-PG UIKit Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8CA83AFD7AF6455200F8A90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BB81B7127B26EB1007F7A57 /* Build configuration list for PBXNativeTarget "PG UIKit Calculator" */;
 			buildPhases = (
+				787424C5F5BEA3872E7542C7 /* [CP] Check Pods Manifest.lock */,
 				1BB81B5927B26EAF007F7A57 /* Sources */,
 				1BB81B5A27B26EAF007F7A57 /* Frameworks */,
 				1BB81B5B27B26EAF007F7A57 /* Resources */,
+				624344C0E11A2AEAECCCD213 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +194,52 @@
 			files = (
 				1BB81B6D27B26EB1007F7A57 /* LaunchScreen.storyboard in Resources */,
 				1BB81B6A27B26EB1007F7A57 /* Assets.xcassets in Resources */,
-				1BB81B6827B26EAF007F7A57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		624344C0E11A2AEAECCCD213 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		787424C5F5BEA3872E7542C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PG UIKit Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BB81B5927B26EAF007F7A57 /* Sources */ = {
@@ -139,22 +247,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BB81B6527B26EAF007F7A57 /* ViewController.swift in Sources */,
+				1BB81BA027B2A4E4007F7A57 /* ButtonsHStack.swift in Sources */,
+				1BB81BA327B2A539007F7A57 /* NumpadVStack.swift in Sources */,
 				1BB81B6127B26EAF007F7A57 /* AppDelegate.swift in Sources */,
 				1BB81B6327B26EAF007F7A57 /* SceneDelegate.swift in Sources */,
+				AFBCA646D335B9504BFC3B63 /* MainViewModel.swift in Sources */,
+				AFBCA6D893B4CF8B8DFDE111 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1BB81B6627B26EAF007F7A57 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BB81B6727B26EAF007F7A57 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1BB81B6B27B26EB1007F7A57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +388,7 @@
 		};
 		1BB81B7227B26EB1007F7A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588411A3615BA38F9FE1CF4D /* Pods-PG UIKit Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +399,6 @@
 				INFOPLIST_FILE = "PG UIKit Calculator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +416,7 @@
 		};
 		1BB81B7327B26EB1007F7A57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2AEE806FA30A86648CA688 /* Pods-PG UIKit Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +427,6 @@
 				INFOPLIST_FILE = "PG UIKit Calculator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
