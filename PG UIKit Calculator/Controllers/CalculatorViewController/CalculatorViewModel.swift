@@ -20,49 +20,49 @@ class CalculatorViewModel {
             returnResult = ""
         }
 
-            switch clickedButton {
-            case "+", "-", "*", "/", "=":
-                if let lastChar = returnResult.last {
-                    if checkLastSymbol(lastChar: lastChar) == false {
-                        if clickedButton == "+" {
-                            returnResult.append("+")
-                        } else if clickedButton == "-" {
-                            returnResult.append("-")
-                        } else if clickedButton == "*" {
-                            returnResult.append("*")
-                        } else if clickedButton == "/" {
-                            returnResult.append("/")
-                        } else if clickedButton == "=" {
-                            returnResult = calculateResult().stringValue
-                        }
+        switch clickedButton {
+        case "+", "-", "*", "/", "=":
+            if let lastChar = returnResult.last {
+                if checkLastSymbol(lastChar: lastChar) == false {
+                    if clickedButton == "+" {
+                        returnResult.append("+")
+                    } else if clickedButton == "-" {
+                        returnResult.append("-")
+                    } else if clickedButton == "*" {
+                        returnResult.append("*")
+                    } else if clickedButton == "/" {
+                        returnResult.append("/")
+                    } else if clickedButton == "=" {
+                        returnResult = calculateResult().stringValue
                     }
                 }
-            case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
-                if clickedButton == "0" {
-                    returnResult.append("0")
-                } else if clickedButton == "1" {
-                    returnResult.append("1")
-                } else if clickedButton == "2" {
-                    returnResult.append("2")
-                } else if clickedButton == "3" {
-                    returnResult.append("3")
-                } else if clickedButton == "4" {
-                    returnResult.append("4")
-                } else if clickedButton == "5" {
-                    returnResult.append("5")
-                } else if clickedButton == "6" {
-                    returnResult.append("6")
-                } else if clickedButton == "7" {
-                    returnResult.append("7")
-                } else if clickedButton == "8" {
-                    returnResult.append("8")
-                } else if clickedButton == "9" {
-                    returnResult.append("9")
-                }
-            case "C": returnResult = "0"
-            default:
-                break
             }
+        case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
+            if clickedButton == "0" {
+                returnResult.append("0")
+            } else if clickedButton == "1" {
+                returnResult.append("1")
+            } else if clickedButton == "2" {
+                returnResult.append("2")
+            } else if clickedButton == "3" {
+                returnResult.append("3")
+            } else if clickedButton == "4" {
+                returnResult.append("4")
+            } else if clickedButton == "5" {
+                returnResult.append("5")
+            } else if clickedButton == "6" {
+                returnResult.append("6")
+            } else if clickedButton == "7" {
+                returnResult.append("7")
+            } else if clickedButton == "8" {
+                returnResult.append("8")
+            } else if clickedButton == "9" {
+                returnResult.append("9")
+            }
+        case "C": returnResult = "0"
+        default:
+            break
+        }
         return returnResult
     }
 

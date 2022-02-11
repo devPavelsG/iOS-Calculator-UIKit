@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-    
+
     private var calculatorView = CalculatorViewController()
 
     override func viewDidLoad() {
@@ -21,13 +21,13 @@ class ViewController: UIViewController {
     override open var shouldAutorotate: Bool {
         false
     }
-    
+
     private func calculatorViewSetup() {
         calculatorView.snp.makeConstraints { (make) in
             make.leading.equalToSuperview()
-              make.top.equalToSuperview()
-              make.trailing.equalToSuperview()
-              make.bottom.equalToSuperview()
+            make.top.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.bottom.equalToSuperview()
         }
     }
 }

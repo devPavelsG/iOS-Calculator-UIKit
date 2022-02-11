@@ -21,11 +21,11 @@ class CalculatorViewController: UIView {
         super.init(coder: coder)
         mainViewSetup()
     }
-    
+
     func mainViewSetup() {
         addSubview(buttonsHStack)
         backgroundColor = .black
-        
+
         buttonsHStack.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.top.equalTo(self.snp.centerY)

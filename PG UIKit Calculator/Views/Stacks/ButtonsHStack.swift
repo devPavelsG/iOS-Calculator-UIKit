@@ -16,7 +16,7 @@ class ButtonsHStack: UIStackView {
         super.init(frame: frame)
         buttonHStackSetup()
     }
-    
+
     required init(coder: NSCoder) {
         super.init(coder: coder)
         buttonHStackSetup()
@@ -40,13 +40,15 @@ class ButtonsHStack: UIStackView {
         resultLabel.sizeToFit()
         resultLabel.textColor = .white
         resultLabel.font = resultLabel.font.withSize(56)
-        
+
         for i in 0..<4 {
             let numpad = NumpadVStack(colIndex: i)
             numpad.stackSetup()
             numpad.numpadSetup()
             numpad.onButtonTap = { [weak self] symbol in
-                guard let self = self else { return }
+                guard let self = self else {
+                    return
+                }
                 let result = self.calculatorViewModel.getResult(clickedButton: symbol)
                 self.resultLabel.text = "\(result)"
             }
