@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1BB81B6127B26EAF007F7A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B6027B26EAF007F7A57 /* AppDelegate.swift */; };
-		1BB81B6327B26EAF007F7A57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B6227B26EAF007F7A57 /* SceneDelegate.swift */; };
 		1BB81B6527B26EAF007F7A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B6427B26EAF007F7A57 /* ViewController.swift */; };
 		1BB81B6A27B26EB1007F7A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6927B26EB1007F7A57 /* Assets.xcassets */; };
 		1BB81B6D27B26EB1007F7A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6B27B26EB1007F7A57 /* LaunchScreen.storyboard */; };
 		1BB81BA027B2A4E4007F7A57 /* ButtonsHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81B9F27B2A4E4007F7A57 /* ButtonsHStack.swift */; };
 		1BB81BA327B2A539007F7A57 /* NumpadVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB81BA227B2A539007F7A57 /* NumpadVStack.swift */; };
 		2E2597152D616DB6DBEBB6C7 /* Pods_PG_UIKit_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */; };
-		AFBCA646D335B9504BFC3B63 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA09CF65C74EA432F4FC1 /* MainViewModel.swift */; };
-		AFBCA6D893B4CF8B8DFDE111 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA78DD9C1318F95CBB194 /* MainViewController.swift */; };
+		AFBCA37AD07E45E774C27A05 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCADB1076F7D4F5497739E /* CalculatorViewController.swift */; };
+		AFBCAF2AC498C5A6C3B6DD64 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAF06B4BE72D7D06F5D93 /* CalculatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BB81B5D27B26EAF007F7A57 /* PG UIKit Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PG UIKit Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB81B6027B26EAF007F7A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BB81B6227B26EAF007F7A57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1BB81B6427B26EAF007F7A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BB81B6927B26EB1007F7A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BB81B6C27B26EB1007F7A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,8 +29,8 @@
 		1BB81BA227B2A539007F7A57 /* NumpadVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumpadVStack.swift; sourceTree = "<group>"; };
 		29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PG_UIKit_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588411A3615BA38F9FE1CF4D /* Pods-PG UIKit Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG UIKit Calculator.debug.xcconfig"; path = "Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator.debug.xcconfig"; sourceTree = "<group>"; };
-		AFBCA09CF65C74EA432F4FC1 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		AFBCA78DD9C1318F95CBB194 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AFBCADB1076F7D4F5497739E /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		AFBCAF06B4BE72D7D06F5D93 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		FD2AEE806FA30A86648CA688 /* Pods-PG UIKit Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG UIKit Calculator.release.xcconfig"; path = "Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +67,12 @@
 		1BB81B5F27B26EAF007F7A57 /* PG UIKit Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				1BB81B9C27B2A434007F7A57 /* Views */,
 				1BB81B7527B2703F007F7A57 /* Controllers */,
+				1BB81B9C27B2A434007F7A57 /* Views */,
 				1BB81B6027B26EAF007F7A57 /* AppDelegate.swift */,
-				1BB81B6227B26EAF007F7A57 /* SceneDelegate.swift */,
 				1BB81B6927B26EB1007F7A57 /* Assets.xcassets */,
 				1BB81B6B27B26EB1007F7A57 /* LaunchScreen.storyboard */,
 				1BB81B6E27B26EB1007F7A57 /* Info.plist */,
-				AFBCAE7D1EED71BD33EAA21D /* Model */,
 			);
 			path = "PG UIKit Calculator";
 			sourceTree = "<group>";
@@ -85,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB81B6427B26EAF007F7A57 /* ViewController.swift */,
-				AFBCA78DD9C1318F95CBB194 /* MainViewController.swift */,
+				AFBCAE92F4CB5C1F753F6B35 /* CalculatorViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,12 +103,13 @@
 			path = Stacks;
 			sourceTree = "<group>";
 		};
-		AFBCAE7D1EED71BD33EAA21D /* Model */ = {
+		AFBCAE92F4CB5C1F753F6B35 /* CalculatorViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AFBCA09CF65C74EA432F4FC1 /* MainViewModel.swift */,
+				AFBCADB1076F7D4F5497739E /* CalculatorViewController.swift */,
+				AFBCAF06B4BE72D7D06F5D93 /* CalculatorViewModel.swift */,
 			);
-			path = Model;
+			path = CalculatorViewController;
 			sourceTree = "<group>";
 		};
 		EC596EE18C4097872CD14163 /* Pods */ = {
@@ -250,9 +247,8 @@
 				1BB81BA027B2A4E4007F7A57 /* ButtonsHStack.swift in Sources */,
 				1BB81BA327B2A539007F7A57 /* NumpadVStack.swift in Sources */,
 				1BB81B6127B26EAF007F7A57 /* AppDelegate.swift in Sources */,
-				1BB81B6327B26EAF007F7A57 /* SceneDelegate.swift in Sources */,
-				AFBCA646D335B9504BFC3B63 /* MainViewModel.swift in Sources */,
-				AFBCA6D893B4CF8B8DFDE111 /* MainViewController.swift in Sources */,
+				AFBCA37AD07E45E774C27A05 /* CalculatorViewController.swift in Sources */,
+				AFBCAF2AC498C5A6C3B6DD64 /* CalculatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

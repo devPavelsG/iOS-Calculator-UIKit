@@ -10,7 +10,7 @@ import UIKit
 class ButtonsHStack: UIStackView {
 
     private var resultLabel = UILabel()
-    private var mainViewModel = MainViewModel()
+    private var calculatorViewModel = CalculatorViewModel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,7 +47,7 @@ class ButtonsHStack: UIStackView {
             numpad.numpadSetup()
             numpad.onButtonTap = { [weak self] symbol in
                 guard let self = self else { return }
-                let result = self.mainViewModel.getResult(clickedButton: symbol)
+                let result = self.calculatorViewModel.getResult(clickedButton: symbol)
                 self.resultLabel.text = "\(result)"
             }
             addArrangedSubview(numpad)

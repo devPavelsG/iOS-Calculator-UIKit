@@ -10,20 +10,20 @@ import SnapKit
 
 class ViewController: UIViewController {
     
-    private var mainView = MainView()
+    private var calculatorView = CalculatorViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(mainView)
-        mainViewSetup()
+        view.addSubview(calculatorView)
+        calculatorViewSetup()
     }
 
     override open var shouldAutorotate: Bool {
         false
     }
     
-    private func mainViewSetup() {
-        mainView.snp.makeConstraints { (make) in
+    private func calculatorViewSetup() {
+        calculatorView.snp.makeConstraints { (make) in
             make.leading.equalToSuperview()
               make.top.equalToSuperview()
               make.trailing.equalToSuperview()
