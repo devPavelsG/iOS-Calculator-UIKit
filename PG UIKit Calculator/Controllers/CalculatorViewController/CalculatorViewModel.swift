@@ -4,7 +4,7 @@
 
 import Foundation
 
-class CalculatorViewModel {
+final class CalculatorViewModel {
 
     var returnResult = ""
 

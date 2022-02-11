@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ButtonsHStack: UIStackView {
+final class ButtonsHStack: UIStackView {
 
     private var resultLabel = UILabel()
     private var calculatorViewModel = CalculatorViewModel()

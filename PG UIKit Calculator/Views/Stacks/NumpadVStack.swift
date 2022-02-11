@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NumpadVStack: UIStackView {
+final class NumpadVStack: UIStackView {
 
     var onButtonTap: ((String) -> Void)?
     private var colIndex: Int = 0
