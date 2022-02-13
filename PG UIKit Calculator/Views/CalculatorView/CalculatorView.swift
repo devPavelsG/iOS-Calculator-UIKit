@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class CalculatorViewController: UIView {
+final class CalculatorView: UIView {
 
     private var buttonsHStack = ButtonsHStack()
 

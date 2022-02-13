@@ -10,7 +10,7 @@ import SnapKit
 
 class ViewController: UIViewController {
 
-    private var calculatorView = CalculatorViewController()
+    private var calculatorView = CalculatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
