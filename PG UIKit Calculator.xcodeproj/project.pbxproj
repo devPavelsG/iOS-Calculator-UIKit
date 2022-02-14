@@ -88,18 +88,18 @@
 		1BB81B9C27B2A434007F7A57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AFBCA91D6FEB88140B221C77 /* CalculatorView */,
+				AFBCA91D6FEB88140B221C77 /* Calculator */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		AFBCA91D6FEB88140B221C77 /* CalculatorView */ = {
+		AFBCA91D6FEB88140B221C77 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				AFBCAAFCE15C66D90E4700F1 /* CalculatorView.swift */,
 				AFBCAAE1AEDC60F68E87202E /* Numpad */,
 			);
-			path = CalculatorView;
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		AFBCAAE1AEDC60F68E87202E /* Numpad */ = {
