@@ -10,23 +10,23 @@ import SnapKit
 
 final class CalculatorView: UIView {
 
-    private var buttonsHStack = ButtonsHStack()
+    private var numpadHStack = NumpadHStackView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        CalcViewSetup()
+        numpadHStackViewSetup()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        CalcViewSetup()
+        numpadHStackViewSetup()
     }
 
-    private func CalcViewSetup() {
-        addSubview(buttonsHStack)
+    private func numpadHStackViewSetup() {
+        addSubview(numpadHStack)
         backgroundColor = .black
 
-        buttonsHStack.snp.makeConstraints { make in
+        numpadHStack.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.top.equalTo(self.snp.centerY)
             make.trailing.equalToSuperview()

@@ -4,7 +4,7 @@
 
 import Foundation
 
-final class CalculatorViewModel {
+final class NumpadViewModel {
 
     var returnResult = ""
 
@@ -15,25 +15,20 @@ final class CalculatorViewModel {
                 returnResult = ""
             }
         }
+
         switch clickedButton {
-        case "+", "-", "*", "/":
-            if let lastChar = returnResult.last {
-                if checkLastSymbol(lastChar: lastChar) == false {
-                    returnResult += clickedButton
-                } else {
-                    return returnResult
-                }
-            }
+        case "+", "-", "*", "/": operatorSymbols(button: clickedButton)
         case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9": returnResult += clickedButton
         case "=": returnResult = calculateResult().stringValue
         case "C": returnResult = "0"
-        default:
-            break
+        default: break
         }
         return returnResult
     }
+}
 
-    private func calculateResult() -> NSNumber {
+private extension NumpadViewModel {
+    func calculateResult() -> NSNumber {
 
         let predicate = NSPredicate(format: "1.0 * \(returnResult) = 0")
 
@@ -47,7 +42,15 @@ final class CalculatorViewModel {
         return result
     }
 
-    private func checkLastSymbol(lastChar: Character) -> Bool {
+    func operatorSymbols(button: String) {
+        if let lastChar = returnResult.last {
+            if checkLastSymbol(lastChar: lastChar) == false {
+                return returnResult += button
+            }
+        }
+    }
+
+    func checkLastSymbol(lastChar: Character) -> Bool {
         let symbolArray: [Character] = ["+", "-", "*", "/"]
 
         for symbol in symbolArray {
@@ -57,4 +60,5 @@ final class CalculatorViewModel {
         }
         return false
     }
+
 }

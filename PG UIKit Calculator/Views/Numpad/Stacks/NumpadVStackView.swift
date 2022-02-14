@@ -1,5 +1,5 @@
 //
-//  NumpadVStack.swift
+//  NumpadVStackView.swift
 //  PG UIKit Calculator
 //
 //  Created by pavels.garklavs on 08/02/2022.
@@ -33,12 +33,7 @@ final class NumpadVStack: UIStackView {
     func numpadSetup() {
         for i in 1..<5 {
             let button = UIButton()
-            button.backgroundColor = .lightGray
-            button.layer.cornerRadius = 40
-            button.clipsToBounds = true
-            button.setTitleColor(.black, for: .normal)
-            button.setTitleColor(.white, for: .highlighted)
-
+            buttonDefaultSettings(button: button)
             if (i < 4 && colIndex < 3) { // Digits
                 let digit = (3 - i) * 3 + (colIndex + 1)
                 button.setTitle(String(digit), for: .normal)
@@ -83,5 +78,13 @@ private extension NumpadVStack {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = .white
         button.setTitleColor(.orange, for: .highlighted)
+    }
+
+    func buttonDefaultSettings(button: UIButton) {
+        button.backgroundColor = .lightGray
+        button.layer.cornerRadius = 40
+        button.clipsToBounds = true
+        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .highlighted)
     }
 }
