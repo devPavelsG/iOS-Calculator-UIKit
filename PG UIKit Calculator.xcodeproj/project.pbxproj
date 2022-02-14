@@ -12,10 +12,10 @@
 		1BB81B6A27B26EB1007F7A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6927B26EB1007F7A57 /* Assets.xcassets */; };
 		1BB81B6D27B26EB1007F7A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB81B6B27B26EB1007F7A57 /* LaunchScreen.storyboard */; };
 		2E2597152D616DB6DBEBB6C7 /* Pods_PG_UIKit_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */; };
-		AFBCA64EAA090C25442A4B06 /* NumpadVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAD6ED20FAF4ACBDF34D9 /* NumpadVStackView.swift */; };
-		AFBCA666B9B7A30FA0332350 /* NumpadHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAFF3CD4A8A9E7DA1F8CD /* NumpadHStackView.swift */; };
+		AFBCA4F27EA8AFDE077475B7 /* NumpadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAFB8D9121A18791A83E2 /* NumpadViewModel.swift */; };
+		AFBCA919915A01C9CE3E4E71 /* NumpadHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA34C05C4DD0042C38D0F /* NumpadHStackView.swift */; };
+		AFBCAA048A9F6015B6CF04F2 /* NumpadVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA07CEFDBD8F34AD263B4 /* NumpadVStackView.swift */; };
 		AFBCAD9B0564A595DEB5E446 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAAFCE15C66D90E4700F1 /* CalculatorView.swift */; };
-		AFBCAEE2ED1389BEAFB5C90C /* NumpadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA06A0278AB61DE2D5436 /* NumpadViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +27,10 @@
 		1BB81B6E27B26EB1007F7A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A982D48558E3A8C3D6AE71 /* Pods_PG_UIKit_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PG_UIKit_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588411A3615BA38F9FE1CF4D /* Pods-PG UIKit Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG UIKit Calculator.debug.xcconfig"; path = "Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator.debug.xcconfig"; sourceTree = "<group>"; };
-		AFBCA06A0278AB61DE2D5436 /* NumpadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadViewModel.swift; sourceTree = "<group>"; };
+		AFBCA07CEFDBD8F34AD263B4 /* NumpadVStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadVStackView.swift; sourceTree = "<group>"; };
+		AFBCA34C05C4DD0042C38D0F /* NumpadHStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadHStackView.swift; sourceTree = "<group>"; };
 		AFBCAAFCE15C66D90E4700F1 /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
-		AFBCAD6ED20FAF4ACBDF34D9 /* NumpadVStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadVStackView.swift; sourceTree = "<group>"; };
-		AFBCAFF3CD4A8A9E7DA1F8CD /* NumpadHStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadHStackView.swift; sourceTree = "<group>"; };
+		AFBCAFB8D9121A18791A83E2 /* NumpadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadViewModel.swift; sourceTree = "<group>"; };
 		FD2AEE806FA30A86648CA688 /* Pods-PG UIKit Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG UIKit Calculator.release.xcconfig"; path = "Target Support Files/Pods-PG UIKit Calculator/Pods-PG UIKit Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				AFBCA91D6FEB88140B221C77 /* CalculatorView */,
-				AFBCA976EC33F5950E48355D /* Numpad */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,24 +97,25 @@
 			isa = PBXGroup;
 			children = (
 				AFBCAAFCE15C66D90E4700F1 /* CalculatorView.swift */,
+				AFBCAAE1AEDC60F68E87202E /* Numpad */,
 			);
 			path = CalculatorView;
 			sourceTree = "<group>";
 		};
-		AFBCA976EC33F5950E48355D /* Numpad */ = {
+		AFBCAAE1AEDC60F68E87202E /* Numpad */ = {
 			isa = PBXGroup;
 			children = (
-				AFBCAE927B53FB6797C34724 /* Stacks */,
-				AFBCA06A0278AB61DE2D5436 /* NumpadViewModel.swift */,
+				AFBCABBEC06379DA8844C70B /* Stacks */,
+				AFBCAFB8D9121A18791A83E2 /* NumpadViewModel.swift */,
 			);
 			path = Numpad;
 			sourceTree = "<group>";
 		};
-		AFBCAE927B53FB6797C34724 /* Stacks */ = {
+		AFBCABBEC06379DA8844C70B /* Stacks */ = {
 			isa = PBXGroup;
 			children = (
-				AFBCAD6ED20FAF4ACBDF34D9 /* NumpadVStackView.swift */,
-				AFBCAFF3CD4A8A9E7DA1F8CD /* NumpadHStackView.swift */,
+				AFBCA07CEFDBD8F34AD263B4 /* NumpadVStackView.swift */,
+				AFBCA34C05C4DD0042C38D0F /* NumpadHStackView.swift */,
 			);
 			path = Stacks;
 			sourceTree = "<group>";
@@ -254,9 +254,9 @@
 				1BB81B6527B26EAF007F7A57 /* ViewController.swift in Sources */,
 				1BB81B6127B26EAF007F7A57 /* AppDelegate.swift in Sources */,
 				AFBCAD9B0564A595DEB5E446 /* CalculatorView.swift in Sources */,
-				AFBCA64EAA090C25442A4B06 /* NumpadVStackView.swift in Sources */,
-				AFBCA666B9B7A30FA0332350 /* NumpadHStackView.swift in Sources */,
-				AFBCAEE2ED1389BEAFB5C90C /* NumpadViewModel.swift in Sources */,
+				AFBCAA048A9F6015B6CF04F2 /* NumpadVStackView.swift in Sources */,
+				AFBCA919915A01C9CE3E4E71 /* NumpadHStackView.swift in Sources */,
+				AFBCA4F27EA8AFDE077475B7 /* NumpadViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
